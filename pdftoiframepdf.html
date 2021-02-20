@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Get the html code</title>
+</head>
+<body>
+    <input type="text" placeholder="PDF Link" id="myInput">
+    <button type="button" onclick="getInputValue();">Get Value</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            // Displaying the value
+            document.write('<plaintext><iframe id="fred" style="border: 1px solid #666CCC;" title="PDF in an i-Frame" src="'+ inputVal +'" width="850" height="1100" frameborder="1" scrolling="auto"></iframe>');
+        }
+    </script>
+</body>
+</html>
